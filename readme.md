@@ -5,7 +5,8 @@ The game is written in Ruby and uses the SQLite3 gem to store quotes, philosophe
 
 ## ORM
 
-The underlying tech behind wORMhole is its object-relational mapping, which allows entries in the database to be manipulated as Ruby objects.  
+The underlying tech behind wORMhole is its object-relational mapping, allowing entries in the database to be manipulated as Ruby objects.    
+
 Similar to Rails' ActiveRecord ORM, each database table in wORMhole is modeled as a Ruby class that inherits from `SQLObject`.
 Each instance of `SQLObject` represents a (potential) entry in the database. Using core concepts from meta-programming, the `SQLObject`
 class dynamically generates getter and setter methods for columns in the database:
