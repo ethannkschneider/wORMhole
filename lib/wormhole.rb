@@ -62,6 +62,7 @@ class Quiz
     puts ""
     puts "-----------------------------"
     puts "To which 'school' of philosophy does the quote belong?"
+    puts "-----------------------------"
     puts "Please type:"
     puts "'an' for Analytic"
     puts "'co' for Continental"
@@ -103,8 +104,8 @@ class Quiz
     puts "Querying the database...".colorize(:light_magenta)
     sleep(2)
     system("clear")
-    puts "Converting database entries into Ruby objects with our sweet wORMhole technology...".colorize(:light_cyan)
-    sleep(3)
+    puts "***Converting database entries into Ruby objects with our excellent wORMhole technology...***".colorize(:light_cyan)
+    sleep(4)
     system("clear")
   end
 end
