@@ -1,6 +1,6 @@
 CREATE TABLE quotes (
   id INTEGER PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
+  body VARCHAR(255) NOT NULL,
   philosopher_id INTEGER,
 
   FOREIGN KEY(philosopher_id) REFERENCES philosopher(id)
@@ -23,7 +23,8 @@ INSERT INTO
   schools (id, name)
 VALUES
   (1, "Continental Philosophy"), (2, "Analytic Philosophy"),
-  (3, "Chinese Philosophy"), (4, "Arctic Philosophy");
+  (3, "Chinese Philosophy"), (4, "Arctic Philosophy"),
+  (5, "Upside-down Philosophy"), (6, "Wonderful Philosophical Musings of Woodland Creatures");
 
 INSERT INTO
   philosophers (id, name, school_id)
@@ -43,11 +44,15 @@ VALUES
   (13, "Thimblarb", 4),
   (14, "Lottgarg", 4),
   (15, "Hippleblimp", 4),
-  (16, "Flibglaarb", 4);
-
+  (16, "Flibglaarb", 4),
+  (17, "Steve", 5),
+  (18, "Gorgon-blorgon", 5),
+  (19, "Chipper-flip", 6),
+  (20, "Tin-tin Bim-bim", 6),
+  (21, "Ecto-Squirrel", 6);
 
 INSERT INTO
-  quotes (id, name, philosopher_id)
+  quotes (id, body, philosopher_id)
 VALUES
   (1, "The body is not a thing, it is a situation: it is our grasp on the world and our sketch of our project", 1),
   (2, "Hell is other people", 2),
@@ -65,4 +70,12 @@ VALUES
   (14, "The self is an ice cube relating itself to an icecube", 13),
   (15, "Building a life is like building an igloo -- it requires lots of ice", 14),
   (16, "There is but one form of Being -- that which, from Nothingness, manifests itself as Snow and Ice", 15),
-  (17, "Existence precedes essence, and both are preceded by torrential ice storms", 16);
+  (17, "Existence precedes essence, and both are preceded by torrential ice storms", 16),
+  (18, "If your heart is true, and your hair is also true, then things will be ok", 17),
+  (19, "Glaaaarg blip goooop", 18),
+  (20, "Light is, in essence, electromagnetic radiation. It is also what links the real world to the dark world of flim flams and dooply bops", 18),
+  (21, "It's not what you look at that matters. It's what you see. And acorns.", 19),
+  (22, "Philosophic meditation is an accomplishment by which I attain Being and my own self. Also, build a tree house! It'a wonderful way to spend your time.", 20),
+  (23, "To begin with, we put the proposition: pure phenomenology is the science of pure rodent consciousness.", 20),
+  (24, "Humans are the only creatures who refuse to be what they are. Ecto-Squirrel accepts its Being with open arms", 21),
+  (25, "I think, therefore I am Ecto-Squirrel", 21);

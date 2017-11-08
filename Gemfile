@@ -14,3 +14,6 @@ gem 'sqlite3'
 
 # For helper methods
 gem 'activesupport'
+
+# For pretty displays
+gem 'colorize'
