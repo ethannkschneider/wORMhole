@@ -86,15 +86,6 @@ module Associatable
     end
   end
 
-  # def has_many_through(name, through_name, source_name)
-  #   through_options = self.assoc_options[through_name]
-  #
-  #   define_method(name) do
-  #     source_options = through_options.model_class.assoc_options[source_name]
-  #     .where(through_options.primary_key => self.send(through_options.foreign_key))
-  #   end
-  # end
-
   def assoc_options
     @assoc_options ||= {}
   end

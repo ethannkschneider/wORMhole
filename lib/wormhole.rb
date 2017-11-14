@@ -4,7 +4,6 @@ require_relative 'philosopher'
 require_relative 'school'
 require_relative 'db_connection'
 require 'colorize'
-require 'byebug'
 
 class Quiz
 
