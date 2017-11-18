@@ -56,7 +56,7 @@ If you just want to use wORMhole's ORM in your own project, follow the instructi
   * Also move `wORMhole/lib/sql_object.rb`, `wORMhole/lib/db_connection.rb`, and `wORMhole/philosophers.sql` into this new directory
 4. In `wORMhole/lib` there should now only be several `.rb` files. Replace `philosopher.rb`, `quote.rb`, and `school.rb` with your own model files
   * Add any necessary associations (use Rails syntax, e.g. `belongs_to`)
-  * IMPORTANT: Remember to `require_relative 'sql_object'` at the top of your model files and to call `finalize!` at the end of your model class definitions. This will allow `sql_object.rb` to dynamically generate all the necessary column and association
+  * IMPORTANT: Remember to `require_relative 'sql_object'` at the top of your model files and to call `finalize!` at the end of your model class definitions. This will allow `sql_object.rb` to dynamically generate all the necessary column and association methods
 5. Replace `wormhole.rb` with your own app file (e.g. `app.rb`)
   * Note: This step may be more complicated depending on the file structure of your app
 6. In the `orm` directory, edit the `philosophers.sql` file to create the seeds for your own database (I assume they will not be philosophers!)
