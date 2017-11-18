@@ -62,7 +62,7 @@ If you just want to use wORMhole's ORM in your own project, follow the instructi
 6. In the `orm` directory, edit the `philosophers.sql` file to create the seeds for your own database (I assume they will not be philosophers!)
   * You will probably want to change the name of this file as well to reflect your own database
 7. At the top of `orm/db_connection.rb`, change the the file constants (e.g. `PHILOSOPHERS_SQL_FILE`) to reflect your own file structure
-  * You will also want to change the file path
+  * You will also want to change the file path for each of these constants
   * Make sure to update all references to these variables within thise file too!
 
 
