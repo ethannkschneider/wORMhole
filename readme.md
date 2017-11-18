@@ -63,7 +63,7 @@ If you just want to use wORMhole's ORM in your own project, follow the instructi
   * You will probably want to change the name of this file as well to reflect your own database
 7. At the top of `orm/db_connection.rb`, change the the file constants (e.g. `PHILOSOPHERS_SQL_FILE`) to reflect your own file structure
   * You will also want to change the file path for each of these constants
-  * Make sure to update all references to these variables within thise file too!
+  * Make sure to update all references to these variables within the file too!
 
 
 That should do it! If you have are having any difficulties, you can check out [Benjamin Berman's](https://github.com/bdberm) [Track's Repo](https://github.com/bdberm/tracks), which contains a demo called "Dogs" that utilizes an MVC framework that Ben built, as well as wORMhole's ORM.   
