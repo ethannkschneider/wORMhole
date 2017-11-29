@@ -65,5 +65,15 @@ If you just want to use wORMhole's ORM in your own project, follow the instructi
     * You will also want to change the file path for each of these constants
     * Make sure to update all references to these variables within the file too!
 
+Once you have this set up, you are free to create new model classes that extend `SqlObject`. These new classes will have access to the following methods:   
+
+Class Methods:
+* `SqlObject::find(id)` => returns an object in the database with the given id
+* `SqlObject::all` => returns an array of all entries (as objects) in the database from the given class
+* `SqlObject::where(params)` => accepts a params hash where keys are columns in the database table and values are the values you are querying for
+* Rails-like associations to generate instance methods: `belongs_to`, `has_many`, and `has_one_through`
+
+Instance Methods:
+* `SqlObject#save` => inserts a new entry into the database, or updates an existing one
 
 That should do it! If you have are having any difficulties, you can check out [Benjamin Berman's](https://github.com/bdberm) [Tracks Repo](https://github.com/bdberm/tracks), which contains a demo called "Dogs" that utilizes an MVC framework that Ben built, as well as wORMhole's ORM.   
